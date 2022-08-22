@@ -26,8 +26,6 @@ public class MakeChange
 			int numD = 0;
 			int numPennies = 0;
 			int bill;
-			
-			//price of the item / 2 = nearest highest bill
 
 			System.out.println("The tendered amount is greater than the amount of item");
 			double change = tendered - amount;
@@ -35,13 +33,8 @@ public class MakeChange
 			int floor = (int) change;
 			System.out.println("Change due: " + change);
 			
-//			bill= (int) tendered / 2;
-//			System.out.print(bill + " Dollar Bill"+ "\t");
-//			amount = amount % 10;
-			
 			numDollars =(int) (coins/ 100);
 			coins = coins % 100;
-			//(floor) = (int) change;
 			System.out.print("Dollars: "  + numDollars + "\t");
 
 			numQ = (int)(coins / 25); // 25cents
