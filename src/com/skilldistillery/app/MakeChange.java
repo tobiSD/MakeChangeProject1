@@ -29,9 +29,8 @@ public class MakeChange
 
 			System.out.println("The tendered amount is greater than the amount of item");
 			double change = tendered - amount;
-			int coins = (int) (change * 100);
-			int floor = (int) change;
 			System.out.println("Change due: " + change);
+			int coins = (int) (change * 100);
 			
 			numDollars =(int) (coins/ 100);
 			coins = coins % 100;
